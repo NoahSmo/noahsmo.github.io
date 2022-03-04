@@ -1,0 +1,135 @@
+
+
+#container{
+    display: grid; 
+    grid-template-columns: 0.9fr 1.1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    ". .";
+    height: 97vh;
+}
+
+#left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#left h1{
+    text-align: center;
+    font-size: 4em;
+    width: 70%;
+}
+
+#formulaire {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 70%;
+    margin: 0 auto;
+    padding: 2% 1%;
+    background-color: #cacaca79;
+    border: 1px solid gray;
+}
+
+.formulaire span{
+    margin: 2% 1% 1%;
+}
+
+#formulaire-input {
+    display: flex;
+    margin: 1%;
+}
+
+#formulaire-input input{
+    width: 100%;
+}
+
+#formulaire-input button{
+    width: 4%;
+}
+
+#formulaire-input-text {
+    text-align: center;
+    height: 2.5em;
+    background-color: #cacaca;
+    border: 1px solid gray;
+}
+
+#formulaire-button {
+    width: 60%;
+    margin: 2% auto;
+    padding: 4% 1%;
+    border-radius: 15px;
+    border: 1px solid gray;
+}
+
+
+
+#right {
+    background-color: #cacaca79;
+    border: 1px solid gray;
+}
+
+#right span {
+    font-size: 2em;
+}
+
+#ingredient {
+    padding-top: 2%;
+}
+
+#ingredient span {
+    margin-top: 2%;
+    margin-left: 1%;
+    font-weight: bold;
+}
+
+#liste-ingredient {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-evenly;
+}
+
+.div-liste{
+    margin: 1% 0;
+    width: 32%;
+    height: 50px;
+    background-color: #cacacaf6;
+    border: 1px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#recette span{
+    margin-left: 1%;
+    font-weight: bold;
+}
+
+#recette div{
+    width: 94%;
+    margin: 2% auto;
+}
+
+#recette li{
+    padding: 2% ;
+    font-size: 1.5em;
+}
+
+@media screen and (max-width: 940px) {
+
+    #container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #right{
+        margin-top: 4%;
+    }
+    
+}
